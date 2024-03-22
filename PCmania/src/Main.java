@@ -6,8 +6,6 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner cin = new Scanner(System.in);
-        //instancia do computador
-        //Computador[] pc = new Computador[10];
         //instancia do cliente
         Cliente cliente = new Cliente("dudu",111111111);
         int i = 0;
@@ -28,8 +26,9 @@ public class Main {
                     cliente.pc[i].memousb = new MemoriaUSB(16);
                     cliente.pc[i].marca = "Positivo";
                     cliente.pc[i].preco = 3300.00f;
-                    cliente.pc[i].hb.nome = "Pentium core i3 (2200Mhz) 8 GB de memoria RAM";
-                    cliente.pc[i].hb.tipo = 500;
+                    cliente.pc[i].hb[0] = new HardwareBasico("Pentium core i3",2200);
+                    cliente.pc[i].hb[1] = new HardwareBasico("Memoria Ram",8);
+                    cliente.pc[i].hb[2] = new HardwareBasico("HD",500);
                     cliente.pc[i].op.nome = "Sistema operacional Linux Ubuntu";
                     cliente.pc[i].op.tipo = 32;
                     cliente.pc[i].memousb.nome = "Pendrive";
@@ -48,8 +47,9 @@ public class Main {
                     cliente.pc[i].memousb = new MemoriaUSB(32);
                     cliente.pc[i].marca = "Acer";
                     cliente.pc[i].preco = 8800.00f;
-                    cliente.pc[i].hb.nome = "Pentium core i5 (3370Mhz) 16 GB de memoria RAM";
-                    cliente.pc[i].hb.tipo = 1000;
+                    cliente.pc[i].hb[0] = new HardwareBasico("Pentium core i5",3370);
+                    cliente.pc[i].hb[1] = new HardwareBasico("Memoria Ram",16);
+                    cliente.pc[i].hb[2] = new HardwareBasico("HD",1000);
                     cliente.pc[i].op.nome = "Sistema operacional Windows 8 ";
                     cliente.pc[i].op.tipo = 64;
                     cliente.pc[i].memousb.nome = "Pendrive";
@@ -67,8 +67,9 @@ public class Main {
                     cliente.pc[i].memousb = new MemoriaUSB(64);
                     cliente.pc[i].marca = "Vaio";
                     cliente.pc[i].preco = 4800.00f;
-                    cliente.pc[i].hb.nome = "Pentium core i7 (4500Mhz) 32 GB de memoria RAM";
-                    cliente.pc[i].hb.tipo = 2000;
+                    cliente.pc[i].hb[0] = new HardwareBasico("Pentium core i7",4500);
+                    cliente.pc[i].hb[1] = new HardwareBasico("Memoria RAM",32);
+                    cliente.pc[i].hb[2] = new HardwareBasico("HD",2000);
                     cliente.pc[i].op.nome = "Sistema operacional Windows 10";
                     cliente.pc[i].op.tipo = 64;
                     cliente.pc[i].memousb.nome = "HD Externo";
